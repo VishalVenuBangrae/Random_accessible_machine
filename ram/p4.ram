@@ -1,0 +1,9 @@
+r3 = 9
+r2 = 3
+n1: inc r1
+  dec r2
+  r2 jmp n3
+n2: inc r1
+  dec r3
+  r3 jmp n2
+n3: continue

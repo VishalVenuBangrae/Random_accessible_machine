@@ -1,0 +1,15 @@
+R1 = 15
+R2 = 3
+
+        MOV R3 R2
+N1:     R1 JMP N4
+        MOV R2 R3
+N2:     R2 JMP N3
+        DEC R1
+        R1 JMP N1
+        DEC R2
+        JMP N2
+N3:     INC R4
+        JMP N1
+N4:     MOV R1 R4
+        CONTINUE
